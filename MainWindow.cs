@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace RawMouseInputDevice
 {
-    public partial class Form1 : Form, IMessageFilter
+    public partial class MainWindow : Form, IMessageFilter
     {
         private RawMouseHandler mouseHandler;
 
         //  Initialization
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
             Application.AddMessageFilter(this);
