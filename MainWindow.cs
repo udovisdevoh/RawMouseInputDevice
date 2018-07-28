@@ -29,14 +29,20 @@ namespace RawMouseInputDevice
 
         public bool PreFilterMessage(ref Message message)
         {
-            int HardID = mouseHandler.GetDeviceID(message);
+            int x;
+            int y;
+            mouseHandler.GetMouseMovement(message, out x, out y);
 
-            if (HardID > 0)
+            int previousX = 0;
+            int previousY = 0;
+
+            if (x != previousX || y != previousY)
             {
-                System.Diagnostics.Debug.WriteLine("Device ID : " + HardID.ToString());
-                //Return true here if you want to supress the mouse click
-                //bear in mind that mouse down and up messages will still pass through, so you will need to filter these out and return true also.
+                System.Diagnostics.Debug.WriteLine("Position : " + x + ", " + y);
             }
+
+            previousX = x;
+            previousY = y;
 
             return false;
         }

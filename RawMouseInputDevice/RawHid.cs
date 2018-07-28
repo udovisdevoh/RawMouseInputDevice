@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace RawMouseInputDevice
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal struct RawHid
+    public struct RawHid
     {
         [MarshalAs(UnmanagedType.U4)]
         public int dwSizHid;

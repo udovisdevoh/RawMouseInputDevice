@@ -48,7 +48,7 @@ namespace RawMouseInputDevice
         [DllImport("User32.dll")]
         extern static bool RegisterRawInputDevices(RawInputDevice[] pRawInputDevice, uint uiNumDevices, uint cbSize);
 
-        public int GetDeviceID(Message message)
+        public void GetMouseMovement(Message message, out int xRelative, out int yRelative)
         {
             uint dwSize = 0;
 
@@ -62,25 +62,17 @@ namespace RawMouseInputDevice
 
             IntPtr buffer = Marshal.AllocHGlobal((int)dwSize);
 
-            GetRawInputData(
-                message.LParam,
-                RID_INPUT,
-                buffer,
-                ref dwSize,
-                (uint)Marshal.SizeOf(typeof(RawInputHeader))
-            );
+            xRelative = 0;
+            yRelative = 0;
 
             RawInput raw = (RawInput)Marshal.PtrToStructure(buffer, typeof(RawInput));
             Marshal.FreeHGlobal(buffer);
 
-            if (raw.Mouse.ButtonFlags == RawMouseButtons.LeftDown || raw.Mouse.ButtonFlags == RawMouseButtons.RightDown)
+            if (raw.Header.Type == RawInputType.Mouse)
             {
-                return (int)raw.Header.Device;
-            }
-            else
-            {
-                return 0;
-            }
+                xRelative = raw.Mouse.LastX;
+                yRelative = raw.Mouse.LastY;
+            }   
         }
     }
 }

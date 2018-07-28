@@ -12,10 +12,12 @@ namespace RawMouseInputDevice
         /// Mouse input.
         /// </summary>
         Mouse = 0,
+        
         /// <summary>
         /// Keyboard input.
         /// </summary>
         Keyboard = 1,
+        
         /// <summary>
         /// Another device that is not the keyboard or the mouse.
         /// </summary>

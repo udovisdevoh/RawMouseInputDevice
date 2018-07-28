@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace RawMouseInputDevice
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal struct RawInputHeader
+    public struct RawInputHeader
     {
         /// <summary>Type of device the input is coming from.</summary>
         public RawInputType Type;

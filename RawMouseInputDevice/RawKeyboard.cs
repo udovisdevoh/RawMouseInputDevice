@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace RawMouseInputDevice
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal struct RawKeyboard
+    public struct RawKeyboard
     {
         [MarshalAs(UnmanagedType.U2)]
         public ushort MakeCode;
