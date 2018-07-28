@@ -1,0 +1,5 @@
+D:\anonymous\Documents\Programming\C Sharp\RawInputDeviceTest\RawMouseInputDevice\bin\Debug\RawMouseInputDevice.dll
+D:\anonymous\Documents\Programming\C Sharp\RawInputDeviceTest\RawMouseInputDevice\bin\Debug\RawMouseInputDevice.pdb
+D:\anonymous\Documents\Programming\C Sharp\RawInputDeviceTest\RawMouseInputDevice\obj\Debug\RawMouseInputDevice.csproj.CoreCompileInputs.cache
+D:\anonymous\Documents\Programming\C Sharp\RawInputDeviceTest\RawMouseInputDevice\obj\Debug\RawMouseInputDevice.dll
+D:\anonymous\Documents\Programming\C Sharp\RawInputDeviceTest\RawMouseInputDevice\obj\Debug\RawMouseInputDevice.pdb

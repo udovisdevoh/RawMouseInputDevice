@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RawInputDeviceTest", "RawInputDeviceTest.csproj", "{421958EB-9118-47D2-AEC2-666151A2860F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RawMouseInputDevice", "RawMouseInputDevice\RawMouseInputDevice.csproj", "{65C6F929-772B-4741-BB48-1D11C031C237}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{421958EB-9118-47D2-AEC2-666151A2860F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{421958EB-9118-47D2-AEC2-666151A2860F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{421958EB-9118-47D2-AEC2-666151A2860F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{421958EB-9118-47D2-AEC2-666151A2860F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65C6F929-772B-4741-BB48-1D11C031C237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C6F929-772B-4741-BB48-1D11C031C237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C6F929-772B-4741-BB48-1D11C031C237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C6F929-772B-4741-BB48-1D11C031C237}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {826386BA-A1AB-4D87-86AF-5708311077AA}
+	EndGlobalSection
+EndGlobal
